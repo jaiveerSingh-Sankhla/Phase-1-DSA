@@ -4,7 +4,7 @@ class Student
 {
     string name ;
     int age;
-    public: // setter fxn set the private date members
+    public: // setter fxn set the private data members
     void setter(string n, int a ){
         name = n;
         age = a;
