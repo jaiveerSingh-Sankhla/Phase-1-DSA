@@ -1,0 +1,24 @@
+//inorder traversal
+class Solution {
+    void solve(TreeNode* root, vector<int> &arr)
+    {
+        //base case
+        if(root == NULL)
+        {
+           return;
+        }
+
+        solve(root->left,arr);
+        arr.push_back(root->val);
+        solve(root->right,arr);
+    }
+public:
+    vector<int> inorderTraversal(TreeNode* root) {
+        vector<int> arr;
+        solve(root,arr);
+        return arr;
+
+
+
+    }
+};
