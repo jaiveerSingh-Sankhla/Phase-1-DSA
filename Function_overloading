@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+// Polymorphism - Function Overloading
+
+class Student
+{
+    int length;
+    int breath;
+    
+    public:
+    
+    int area( int l,int b)
+    {
+        return (l*b);
+        
+    }   
+    
+    int area( int side)
+    {
+        return (side*side);
+    }
+};
+  
+   int main()
+{ 
+    Student obj;
+    cout<< " Area of Rectangle:"<<obj.area(3,4)<< endl;
+    cout<< " Area of Square :"<< obj.area( 5)<< endl;
+    
+    return 0;
+}
